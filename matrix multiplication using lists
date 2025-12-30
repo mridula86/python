@@ -1,0 +1,31 @@
+A = [[1, 2, 3],
+     [5, 3, 1],
+     [7, 9, 8]]
+
+B = [[3, 4],
+     [12, 4],
+     [8, 14]]
+
+p = len(A)
+q = len(A[0])
+
+t = len(B)
+r = len(B[0])
+
+if q != t:
+    print("Error! Matrix sizes are not compatible")
+    quit()
+
+C = []
+for i in range(p):
+    row = []
+    for j in range(r):
+        row.append(0)
+    C.append(row)
+
+for i in range(p):
+    for j in range(r):
+        for k in range(q):
+            C[i][j] += A[i][k] * B[k][j]
+
+print(C)
