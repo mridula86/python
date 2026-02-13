@@ -1,0 +1,89 @@
+hospital.py
+class Hospital:
+def __init__(self):
+self.patients = {}
+
+def add_patient(self, pid, name, age, disease):
+self.patients[pid] = {
+&quot;Name&quot;: name,
+&quot;Age&quot;: age,
+&quot;Disease&quot;: disease,
+&quot;Doctor&quot;: &quot;Not Assigned&quot;,
+&quot;Days&quot;: 0,
+&quot;Bill&quot;: 0
+}
+return &quot;Patient Added Successfully&quot;
+
+def assign_doctor(self, pid, doctor):
+if pid in self.patients:
+self.patients[pid][&quot;Doctor&quot;] = doctor
+
+return &quot;Doctor Assigned&quot;
+else:
+return &quot;Patient ID Not Found&quot;
+
+def generate_bill(self, pid, days, room_charge, medicine_charge):
+if pid in self.patients:
+bill = (days * room_charge) + medicine_charge
+self.patients[pid][&quot;Days&quot;] = days
+self.patients[pid][&quot;Bill&quot;] = bill
+return bill
+else:
+return &quot;Patient ID Not Found&quot;
+
+def display_patient(self, pid):
+if pid in self.patients:
+return self.patients[pid]
+else:
+return &quot;Patient ID Not Found&quot;
+
+def discharge_patient(self, pid):
+if pid in self.patients:
+del self.patients[pid]
+return &quot;Patient Discharged Successfully&quot;
+else:
+return &quot;Patient ID Not Found&quot;
+
+main.py
+from hospital import Hospital
+hospital = Hospital()
+
+while True:
+print(&quot;\n----- HOSPITAL MANAGEMENT SYSTEM -----&quot;)
+print(&quot;1. Add Patient&quot;)
+print(&quot;2. Assign Doctor&quot;)
+print(&quot;3. Generate Bill&quot;)
+print(&quot;4. Display Patient Details&quot;)
+print(&quot;5. Discharge Patient&quot;)
+print(&quot;6. Exit&quot;)
+choice = int(input(&quot;Enter your choice: &quot;))
+if choice == 1:
+pid = input(&quot;Enter Patient ID: &quot;)
+name = input(&quot;Enter Patient Name: &quot;)
+age = int(input(&quot;Enter Age: &quot;))
+disease = input(&quot;Enter Disease: &quot;)
+print(hospital.add_patient(pid, name, age, disease))
+elif choice == 2:
+pid = input(&quot;Enter Patient ID: &quot;)
+doctor = input(&quot;Enter Doctor Name: &quot;)
+print(hospital.assign_doctor(pid, doctor))
+elif choice == 3:
+pid = input(&quot;Enter Patient ID: &quot;)
+days = int(input(&quot;Enter number of days admitted: &quot;))
+room = int(input(&quot;Enter room charge per day: &quot;))
+medicine = int(input(&quot;Enter medicine charges: &quot;))
+bill = hospital.generate_bill(pid, days, room, medicine)
+print(&quot;Total Bill Amount: Rs.&quot;, bill)
+elif choice == 4:
+pid = input(&quot;Enter Patient ID: &quot;)
+details = hospital.display_patient(pid)
+print(details)
+elif choice == 5:
+pid = input(&quot;Enter Patient ID: &quot;)
+print(hospital.discharge_patient(pid))
+elif choice == 6:
+print(&quot;Exiting Hospital System&quot;)
+
+break
+else:
+print(&quot;Invalid Choice&quot;)
