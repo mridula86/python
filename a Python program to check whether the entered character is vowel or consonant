@@ -1,0 +1,6 @@
+ch = input("Enter a character: ")
+‘a' or ch=="E' or ch =="¢" or clx
+1' or ch=="0' or ch=="0' or ch=="U" or chr
+print(ch, "is a Vowel")
+else:
+print(ch, "is a Consonant")
