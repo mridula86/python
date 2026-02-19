@@ -1,0 +1,9 @@
+n=int (input ("Enter the Limit less than 99999995999 "))
+small=59999999959
+for i in range(l,n+l):
+print ("Enter ",i,end="")
+a=int (input ("th number : "))
+if a<small:
+small=a
+print("Smallest no. is : ",small)
+
