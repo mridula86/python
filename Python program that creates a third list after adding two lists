@@ -1,0 +1,5 @@
+l1stl=eval (input ("Enter Listl : "))
+1st2=eval (input ("Enter List2 : "))
+1st3=1stl+1lst2
+print ("Given List are : ", 1stl," and ",1st2)
+print ("The sum of list are : ",1st3)
