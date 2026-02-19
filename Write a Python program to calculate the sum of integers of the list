@@ -1,0 +1,6 @@
+L=[1,2,"Two", 3,4, "four", 5]
+s5=0
+for x in L:
+if type(x)==int:
+S=5+4X
+print ("The sum of integers is : ",s)
