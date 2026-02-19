@@ -1,0 +1,11 @@
+s = input("Input a string")
+d=1=0
+forcins:
+if c.isdigit():
+d=d+1
+elif c.isalpha():
+I=l+1
+else:
+pass
+print("Letters", 1)
+print("Digits", d)
