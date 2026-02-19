@@ -1,0 +1,28 @@
+@)~ ® = © A
+% % AB
+*xw *ox ABC
+*xw o PR ] ABCD
+ek wox Ewxx ABCDE
+@A)
+n=int (input ("Enter the Limit : "))
+for i in range(l,n+1):
+for j in range(1l,i+1):
+print("*",end="")
+print (nn)
+®)
+n=int (input ("Enter the Limit : ™))
+for i in range(l,n+l1):
+for k in range(n-i,0,-1):
+print (" ',end="")
+for j in range(1l,i+1):
+print ("*",end="'")
+print("™)
+©
+s=input ("Enter the String : ")
+n=len(s)
+for i in range(0,n):
+for j in range(0,1i):
+print(s[j],end="'")
+print("")
+
+
