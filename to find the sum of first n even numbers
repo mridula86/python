@@ -1,0 +1,6 @@
+n=int (input ("Enter the Limit : ™))
+s5=0
+for i in range(0,n+1,2):
+s=s+1
+print ("The sum is : ",s)
+
