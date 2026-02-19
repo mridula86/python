@@ -1,0 +1,24 @@
+import math
+a = float(input("Enter the first coefficient: "))
+b = float(input("Enter the second coefficient: "))
+¢ = float(input("Enter the third coefficient: "))
+if (a!=0.0):
+d = (bb)-(4ac)
+if (d=0.0):
+print("The roots are real and equal.")
+1="-b/(2a)
+print("The roots are ", 1,"and", 1)
+elif(d>0.0):
+print("The roots are real and distinct.")
+11 = (-b+(math.sqrt(d)))/(2a)
+12 = (-b-(math.sqrt(d)))/(2a)
+print("The root1 is: ", r1)
+print("The root2 is: ", 12)
+else:
+print("The roots are imaginary.")
+1p = -b/(2a) ip = math.sqrt(-d)/(2a)
+print("The rootl is: ", 1p, "+1",ip)
+print("The root2 is: ", 1p, "- i",ip)
+else:
+print("Not a quadratic equation.")
+
