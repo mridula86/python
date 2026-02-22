@@ -1,0 +1,16 @@
+# Sum of digit until it reduces to single digit
+# Reading number
+number = int(input("Enter number: "))
+# Finding sum
+total _sum =0
+step=1
+condition = True
+while condition:
+while number:
+total _sum += number%]10
+number /=10
+print("Step-%d Sum: %d" %(step, total _sum))
+number = total _sum
+total _sum =0
+step +=1
+condition = number > 9
