@@ -1,0 +1,9 @@
+# Python Program to Toggle Characters Case in a String
+string = input("Please Enter your Own String : ")
+string1 = string.swapcase()
+print("\nOriginal String =", string)
+print("The Given String After Toggling Case = ", string1l)
+output
+Please Enter your Own String : Python PROgrams
+Original String = Python PROgrams
+The Given String After Toggling Case = pYTHON programs
