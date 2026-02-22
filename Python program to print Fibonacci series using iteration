@@ -1,0 +1,9 @@
+a=0
+n=int(input("Enter the number of terms in the sequence: "))
+print(a,b,end="")
+while(n-2):
+c=atb
+ab=Db,c
+print(c,end="")
+n=n-1
+
