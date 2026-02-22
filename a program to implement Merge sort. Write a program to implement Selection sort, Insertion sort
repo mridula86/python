@@ -1,0 +1,59 @@
+Python program for implementation of MergeSort
+# Merges two subarrays of ar1[].
+# First subarray is arr{l..m]
+# Second subarray is arr[m+1..1]
+defmerge(ary, 1, m, 1):
+nl=m-1+1
+n2=1-m
+# create temp arrays
+L=[0]* @l)
+R=[0] * (n2)
+# Copy data to temp arrays L[] and R[]
+fori inrange(0 , nl):
+L{i] = a1 +i]
+for j in range(0 , n2):
+R[j]=amr[m+1+j]
+# Merge the temp arrays back into arr[l..r]
+1= 0 # Initial index of first subarray
+j = 0# Initial index of second subarray
+k =1# Initial index of merged subarray
+whilei<nl andj<n2:
+if L[i] << R[j]:
+arr[k] = L[i]
+i+=1
+else:
+arr[k] =R[j]
+j+=1
+k+=1
+# Copy the remaining elements of L[], if there
+# are any
+while i <nl:
+arr[k] = L[i]
+i+=1
+k+=1
+# Copy the remaining elements of R[], if there
+# are any
+while j <n2:
+arr[k] =R[j]
+j+=1
+#1is for left index and r is right index of the
+# sub-array of air to be sorted
+def mergeSort(arr,Lr):
+ifl<r:
+# Same as (1+1)//2, but avoids overflow for
+# large 1 and h
+m = (I+(r-1))//2
+# Sort first and second halves
+mergeSort(arr, 1, m)
+mergeSort(arr, m+1, 1)
+merge(art, 1, m, 1)
+# Driver code to test above
+arr=[12,11, 13, 5,6, 7]
+n = len(arr)
+print ("Given array is")
+fori in range(n):
+print ("%d" %arrfi]),
+mergeSort(arr,0,n-1)
+print ("\n\nSorted array is")
+fori in range(n):
+print ("%d" %arrfi]),
