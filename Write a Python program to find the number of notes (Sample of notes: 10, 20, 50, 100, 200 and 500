@@ -1,0 +1,11 @@
+defno_notes(a):
+Q=[500, 200, 100, 50, 20, 10] i Il =}
+for i in range(6):
+q=Q[i]
+x+=int(a / q)
+a=int(a % q)
+ifa>0:
+return x
+print(no_notes(500))
+print(no_notes(560))
+
